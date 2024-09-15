@@ -14,8 +14,9 @@ connDB()
 app.use('/api',userRoute)
 app.use('/api',topicRoute)
 app.use('/api',subTopicRoute)
+
 app.use('/',(req,res) =>{
-    res,send('This is Home Page')
+    res.send('This is Home Page')
 }) 
 const PORT = 8080
 app.listen(PORT,() =>{
